@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Next Beer</title>
+    <script src="src/beer.js" charset="utf-8"></script>
+    <script src="src/comment.js" charset="utf-8"></script>
+    <script src="src/index.js" charset="utf-8"></script>
+    <script src="src/restaurant.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+
+  </head>
+  <body style="background-size:100%; background-attachment:fixed; background-image:url(http://molotilo.com/wp-content/uploads/2016/08/rustic-wood.jpg)">
+  <div>
+    <div class="ui menu" style="position:fixed; background-color:rgba(220,220,220,1); width:100%; z-index:99;">
+      <a class="item" id='next-beer' >Next Brewski™️</a>
+      <a class="item" id='all-beers' >Available Brewskis</a>
+      <a class="item">
+        <div class="ui selection dropdown">
+          <input type="hidden" name="Select Restaurant">
+          <i class="dropdown icon"></i>
+          <div class="default text">Select Restaurant</div>
+          <div class="menu" id="restaurants">
+
+          </div>
+        </div>
+      </a>
+      <div class="right item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search..." id="searchBeerName">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+
+    </div>
+
+      <br>
+      <!-- <input type="submit"> -->
+    <!-- </form> -->
+    <div id="beer-list" >
+
+    </div>
+  </div>
+  </body>
+</html>
